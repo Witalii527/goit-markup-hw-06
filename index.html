@@ -22,13 +22,9 @@
       <div class="container container--decore">
         <nav class="header__menu">
           <a class="header__logo-link" href="./index.html"
-            >Web <span class="header__logo-black">Studio</span></a
+            >Web<span class="header__logo-black">Studio</span></a
           >
-          <button class="header__burger-menu" type="button">
-            <svg class="header__burger-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon_burger"></use>
-            </svg>
-          </button>
+
           <ul class="header__menu-list">
             <li class="header__menu-item">
               <a href="./index.html" class="header__menu-link current"
@@ -57,16 +53,30 @@
             </li>
           </ul>
         </address>
+        <button class="header__burger-menu" type="button">
+          <svg class="header__burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon_burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobail__menu">
+        <div class="mobain__menu-container container">
+          <button class="modal__close" type="button">
+            <svg class="modal__icon" width="8" height="8">
+              <use href="./images/icons.svg#icon_closed"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <main class="main">
-      <section class="hero hide">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">Effective Solutions for Your Business</h1>
           <button class="hero__button" type="button">Order Service</button>
         </div>
       </section>
-      <section class="services hide">
+      <section class="services">
         <div class="container">
           <h2 class="services__title-hidden">1</h2>
           <ul class="services__list">
@@ -121,7 +131,7 @@
           </ul>
         </div>
       </section>
-      <section class="about-us hide">
+      <section class="about-us">
         <div class="container">
           <h2 class="about-us__title">Our Team</h2>
           <ul class="about-us__list">
@@ -312,7 +322,7 @@
           </ul>
         </div>
       </section>
-      <section class="portfolio hide">
+      <section class="portfolio">
         <div class="container">
           <h2 class="portfolio__title">Our Portfolio</h2>
           <ul class="portfolio__list">
@@ -574,11 +584,11 @@
         </div>
       </section>
     </main>
-    <footer class="footer hide">
+    <footer class="footer">
       <div class="container footer__container">
         <div class="footer__info">
           <a class="footer__logo-link" href="./index.html"
-            >Web<span class="footer__logo-black"> Studio</span></a
+            >Web<span class="footer__logo-black">Studio</span></a
           >
           <p class="footer__text">
             Increase the flow of customers and sales for your business with
@@ -586,7 +596,7 @@
           </p>
         </div>
         <div class="footer__inner">
-          <p class="footer__text">Social media</p>
+          <p class="footer__title">Social media</p>
           <ul class="footer__social-list">
             <li class="footer__social-item">
               <a href="#" class="footer__social-link">
@@ -619,7 +629,7 @@
           </ul>
         </div>
         <div class="footer__subscribe">
-          <p class="footer__text">Subscribe</p>
+          <p class="footer__title">Subscribe</p>
           <form class="footer__form" name="footer__form">
             <label class="footer__input-label">
               <input
@@ -640,7 +650,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal__overlay">
+    <div class="modal__overlay is-open">
       <div class="modal">
         <button class="modal__close" type="button">
           <svg class="modal__icon" width="8" height="8">
@@ -719,8 +729,13 @@
                   <use href="./images/icons.svg#icon_submit"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="#" class="privacy__policy-link">Privacy Policy</a>
+              <span
+                >I accept the terms and conditions of the<a
+                  href="#"
+                  class="privacy__policy-link"
+                  >Privacy Policy</a
+                ></span
+              >
             </label>
           </div>
 
